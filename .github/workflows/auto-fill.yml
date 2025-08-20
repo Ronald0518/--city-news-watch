@@ -17,9 +17,6 @@ jobs:
         with:
           node-version: 20
 
-      - name: Install deps
-        run: npm ci
-
       - name: Run auto-fill
         env:
           GCP_CREDENTIALS: ${{ secrets.GCP_CREDENTIALS }}
